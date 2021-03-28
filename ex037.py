@@ -1,14 +1,15 @@
 # DONE variável para receber o número inteiro
-# converter para binário
+# DONE verificar se é igual ou maior que 2 para aplicar regra
+# fazer condição para
 
-inteiro = int(input('Digite um número inteiro: '))
-#print(inteiro)
+num = int(input('Digite um número inteiro: '))
 lista = []
-while inteiro >= 2:
-    lista.append(str(inteiro%2))
-    inteiro = inteiro//2
-
-lista.append(str(inteiro))
-lista.reverse()
-x = ''.join(lista)
-print(x)
+if num >= 2:
+    while num // 2 >= 2:
+        lista.append(num%2)
+        num = num // 2
+    lista.append(num%2)
+    lista.append(round(num//2))
+    print(lista)
+else:
+    print(num)
