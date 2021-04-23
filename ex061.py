@@ -2,7 +2,8 @@
 # DONE variavel para receber razao
 # DONE variavel termo par receber primeiro termo e depois atualizar
 # DONE variavel para iniciar contador
-# estrutura while
+# DONE estrutura while
+# DONE print de quantos número foram mostrados
 
 primeiro = int(input('Primeiro termo: '))
 razao = int(input('Razão: '))
@@ -23,3 +24,6 @@ while mais != 0:
 
 print('FIM!')
 print(f'Progressão finalizada com {cont-1} termos mostrados!')
+
+
+"""ACABEI RESOLVENDO O 62 AQUI"""
