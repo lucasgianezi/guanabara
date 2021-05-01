@@ -1,7 +1,7 @@
-# 1) variavel para receber inteiro
-# 2) mostra tabuada
-# 3) colocar itens 1 e 2 dentro de um while
-
+# 1) DONE abre while com True para deixar infinito
+# 2) DONE variavel para receber inteiro
+# 3) DONE se o inteiro acima for negativo, quebrar o while 
+# 4) DONE faz um for e mostra tabuada
 
 while True:
     n = int(input('Quer ver a tabuada de qual valor? '))
