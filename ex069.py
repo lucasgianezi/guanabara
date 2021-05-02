@@ -1,3 +1,15 @@
+# DONE print layout
+# DONE inicio das variaveis a, be c com zero
+# DONE inicio do while com True
+# DONE recebe idade 
+# DONE recebe sexo e faz os ajustes
+# DONE faz o while para make sure que se digitou corretamente
+# DONE faz os ifs para idade maior que 18, maculino e mulher com menos de 20
+# DONE dentro dos ifs coloca adiciona 1 a variavel
+# DONE variavel decisão para saber se quer continuar com while
+# DONE if decisão == n, break
+# DONE sai do while com e encerra o programa printando as variaveis
+
 
 print('-='*15)
 print(f'{"CADASTRO DE PESSOAS":^30}')
