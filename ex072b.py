@@ -1,5 +1,9 @@
 # DONE fazer a tupla com os números por extenso
-# DONE fazer a entrada do usuario com while infinito para garantir a condição
+# DONE iniciar o while true infinito
+# DONE recebe entrada o usuario com condição while para satisfazer condição
+# DONE print do numero por extenso
+# DONE recebe entrada do usuario com while para condição para parar
+# DONE break se condição é n 
 # DONE fazer o print com a tupla
 
 extenso = ('zero','um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
