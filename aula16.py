@@ -35,4 +35,6 @@ Conforme vimos no mundo 1, se quisermos acessar letras/elementos de uma string d
 Na verdade, strings são variáveis compostas. Strings não são tuplas, strings são listas. Mas o ponto é que podemos acessar elementos de uma tupla igual de uma string.
 Podemos também fazer fatiamento de tuplas igual fizemos de strings.
 
+Na verdade, essas funções de acessar indices/fatiamento não são propriedades de tuplas e string. São propriedades das variáveis compostas no geral. Como strings e tuplas são variaveis compostas, nós podemos utilizar estes métodos.
+
 '''
