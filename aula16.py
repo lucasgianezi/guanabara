@@ -1,8 +1,3 @@
-#portfolio = ('fx', 'rates', 'equities', 'volatility')
-portfolio = 'fx'
-portfolio.replace('f','r')
-print(portfolio)
-
 '''
 Em Python existem 3 tipos de variáveis compostas: Tuplas, listas e dicionarios.
 
@@ -38,7 +33,10 @@ Na verdade, strings são variáveis compostas. Strings não são tuplas, strings
 Podemos também fazer fatiamento de tuplas igual fizemos de strings.
 
 Na verdade, essas funções de acessar indices/fatiamento não são propriedades de tuplas e string. São propriedades das variáveis compostas no geral. Como strings e tuplas são variaveis compostas, nós podemos utilizar estes métodos.
-Outras funções de variáveis compostas que podem ser usadas com tuplas: len, estrutura de repetição for, 
+Outras funções de variáveis compostas que podem ser usadas com tuplas: len, estrutura de repetição for, count, index, ...
+no caso do index, o programa vai pegar sempre a primeira ocorrência.
+caso vc queira a segunda ocorrência, você pode colocar um condição para que ele começe a procurar a partir de um determinado indice.
+index('letra/número procurado' , a partir de qual posição)
 
 Uma característica importante das tuplas é o fato de elas serem IMUTÁVEIS. Depois de declarar uma tuplas, eu não posso atribuir coisas aos elementos dela. Eu não posso substituir os elementos, não posso aumentar a quantidade de elementos, não posso diminuir, ... Para fazer isso seria preciso criar uma nova tupla.
 Se você tentar atribuir um valor a um elemento receberá o erro -> "TypeError: 'tuple' object does not support item assignment"
@@ -51,7 +49,10 @@ Os dicionários nós colocamos entre chaves {}
 Os elementos destas estruturas nós separamos por virgula
 
 
-
+Uma tupla pode conterdiversos tipos de dados: números, string, booleana, ...
+A única forma de mudar uma tupla é através do "del"
+se você definir um tupla, fazer um del e depois tentar imprimir a tupla
+vc receberá uma mensagem de erro dizendo NameError: name 'pessoa' is not defined
 
 Formas de usar estrutura de repetição:
 
@@ -73,14 +74,36 @@ for pos, comida in enumerate(lanche):
     print('Eu vou comer {comida} na posição {pos})
 
 
+como dito anteriormente, uma tupla é imutável.
+se fizermos print(sorted(tupla)) isso não vai mudar a ordem da tupla, vai somente mostrar a tupla em ordem. Tanto que essa tupla em ordem aparecerá entre colchetes, e não entre parenteses. pois na verdade vai meio que fazer uma lista temporária.
+a tupla continua com o mesmo formato.
 
 
+Outra coisa que podemoz fazer é "adição de tuplas"
+a = (2,5,4)
+b = (5,8,1,2)
+c = a + b
+print(c)
+c = (2,5,4,5,8,1,2)
 
+Note que ele segue a ordem.
+Portanto, nestes casos de adição de tuplas a ordem importa e, portanto, "c = a + b" é diferente de "c = b + a".
 
+portfolio = ('fx', 'rates', 'equities', 'volatility')
+print(sorted(portfolio))
+print(portfolio)
 
+a = (2,5,4)
+b = (5,8,1,2)
+c = b + a
+print(c)
 
-
-
-
-
+print(len(c))
+print(a.count(8))
+print(c.index(8))
 '''
+
+c = ('aula')
+print(len(c))
+del(c)
+print(c)
