@@ -36,7 +36,7 @@ Na verdade, essas funções de acessar indices/fatiamento não são propriedades
 Outras funções de variáveis compostas que podem ser usadas com tuplas: len, estrutura de repetição for, count, index, ...
 no caso do index, o programa vai pegar sempre a primeira ocorrência.
 caso vc queira a segunda ocorrência, você pode colocar um condição para que ele começe a procurar a partir de um determinado indice.
-index('letra/número procurado' , a partir de qual posição)
+tupla.index('letra/número procurado' , a partir de qual posição)
 
 Uma característica importante das tuplas é o fato de elas serem IMUTÁVEIS. Depois de declarar uma tuplas, eu não posso atribuir coisas aos elementos dela. Eu não posso substituir os elementos, não posso aumentar a quantidade de elementos, não posso diminuir, ... Para fazer isso seria preciso criar uma nova tupla.
 Se você tentar atribuir um valor a um elemento receberá o erro -> "TypeError: 'tuple' object does not support item assignment"
